@@ -1,0 +1,18 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+@font-face{
+    font-family: lato_r;
+    src: url(../../fonts/Lato-Regular.ttf);
+}
+@font-face{
+    font-family: lato_b;
+    src: url(../../fonts/Lato-Bold.ttf);
+}
+
+html, body{
+    font-size: 62.5%;
+    font-family: lato_r;
+}

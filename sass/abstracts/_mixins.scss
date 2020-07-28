@@ -1,0 +1,32 @@
+@mixin response($breakpoint){
+    // Large PC
+    @if($breakpoint == xl){
+        @media(max-width: 1200px){
+            @content;
+        }
+    }
+    // PC
+    @if($breakpoint ==lg){
+        @media(max-width:1000px){
+            @content;
+        }
+    }
+    // tablet
+    @if($breakpoint ==md){
+        @media(max-width:760px){
+            @content;
+        }
+    }
+    // phone
+    @if($breakpoint ==sm){
+        @media(max-width:560px){
+            @content
+        }
+    }
+};
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}

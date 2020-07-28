@@ -1,0 +1,14 @@
+$colors:(
+
+);
+
+$font-sizes:(
+
+);
+@function color($color-name){
+    @return map.get($colors, $color-name);
+};
+
+@function size($size){
+    @return map.get($font-sizes, $size);
+}
