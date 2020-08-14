@@ -1,0 +1,96 @@
+footer.footer {
+    margin-top: 5.7rem;
+    position: relative;
+    min-height: 39rem;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -188rem;
+        left: 50%;
+        margin-left: -112rem;
+        width: 224rem;
+        height: 224rem;
+        border-radius: 50%;
+        background-color: #9b9bca;
+        z-index: -1;
+    }
+
+
+    & .content {
+        padding: 15rem 0 0;
+        @include flexPosition();
+        flex-wrap: wrap;
+
+        &__item {
+            font-family: font-family(secondary);
+            margin: 0 5.4rem;
+
+            h3 {
+                font-size: 2rem;
+                color: color(white);
+                font-weight: 500;
+                line-height: 3rem;
+                margin-bottom: 1.2rem;
+
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    a {
+                        display: block;
+                        color: color(white);
+                        text-decoration: none;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    & .footer-bottom {
+        margin: 3rem 0 1.5rem;
+        & .content {
+            @include flexPosition(flex-start);
+            padding: 1rem 0;
+            color: color(white);
+
+            span {
+                font-family: rubik;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            ul {
+                flex: 1;
+                list-style: none;
+                @include flexPosition(flex-end);
+
+                li {
+                    margin: 0 1.55rem;
+                }
+
+                .footer__logo {
+                    text-decoration: none;
+                    color: color(white);
+                    font-size: 2.2rem;
+                    font-family: robo_r;
+                    margin-left: 12.7rem;
+
+                    span {
+                        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+                        font-size: 20px;
+                        line-height: 34px;
+                        font-family: rammet;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+        }
+    }
+}

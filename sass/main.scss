@@ -1,5 +1,18 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
-@import "./base/base"
-
+@import "./base/base";
+// layout
+@import "./layouts/header";
+@import "./layouts/about";
+@import "./layouts/category";
+@import "./layouts/support";
+@import "./layouts/demo"; 
+@import "./layouts/question";
+@import "./layouts/feature";
+@import "./layouts/cardbox";
+@import "./layouts/login";
+@import "./layouts/footer";
+// Components
+@import "./components/btn";
+@import "./components/heading";
 

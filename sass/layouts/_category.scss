@@ -1,0 +1,50 @@
+section.category-block{
+    padding: 8rem 0;
+    @include response(md){
+        padding: 4rem 0;
+    }
+    & .content{
+        @include flexPosition(space-between);
+        @include response(md){
+            max-width: 100%;
+            @include flexPosition();
+            flex-wrap: wrap;
+        }
+        &__item{
+            text-align: center;
+            color: color(primary);
+            font-family: font-family(secondary);
+            border-bottom: .7rem solid color(white);
+            transition: border-bottom .4s;
+            width:21.75%;
+            margin:0 auto;
+
+            @include response(md){
+                width: 46%;
+                margin: 1rem 1rem;
+               
+            }
+
+            h3{
+                font-size: 2.2rem;
+                margin-top: 2.1rem;
+                @include response(md){
+                   margin-top: 1.05rem;
+                }
+            }
+    
+            p{
+                font-size: 1.6rem;
+                max-width:  100%;
+                line-height: 2rem;
+                text-align: center;
+                font-weight: normal;
+                margin: 1.2rem auto 2.2rem;
+                
+            }
+            &:hover{
+                border-bottom: .7rem solid color(gray-bold);
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+section.login-block {
+    padding: 2rem 0 6rem;
+    & .content {
+        h2 {
+            @extend %h2;
+            padding: 7.5rem 0;
+            max-width: 55rem;
+            @include response(md) {
+                margin: 0 .5rem;
+                max-width: 30rem;
+            }
+        }
+
+        .block {
+            @include flexPosition();
+            max-width: 50rem;
+            max-height: 45rem;
+            background: #FFFFFF;
+            box-shadow: 0px 2rem 4rem rgba(149, 149, 201, 0.4);
+            border-radius: 1rem;
+            padding: 2rem 5rem;
+            margin: 0 auto;
+
+            @include response(md) {
+                min-width: 100%;
+                margin: 0 auto;
+                padding: 2rem 2rem;
+            }
+
+            .form {
+                min-width: 100%;
+                @include response(md) {
+                    min-width: 100%;
+                    margin: 0 auto;
+                }
+                &__group {
+                    min-width: 50rem;
+                    margin-bottom: 3rem;
+
+                    label {
+                        display: block;
+                        width: 100%;
+                        flex: 1;
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                        line-height: 4rem;
+                        color: color(primary);
+
+                        @include response(md) {
+                         font-size: 1.4rem;
+                         margin-bottom:.5rem;
+                        }
+                    }
+
+                    input {
+                        width: 40rem;
+                        padding: 1.1rem 4rem;
+                        font-size: 1.8rem;
+                        border: .1rem solid #9595c9;
+                        border-radius: 0.5rem;
+                        @include response(md) {
+                            min-width: 40rem;
+                        }
+                        &:focus {
+                            outline: none;
+                            border: .2rem solid #9595c9;
+                            box-shadow: 0px 2rem 4rem rgba(149, 149, 201, 0.2);
+                            border-radius: .5rem;
+        
+                        }
+                        :--webkit-placeholder{
+                            font-family: rubik;
+                            color: #9d9d9d;
+                        }
+                    }
+
+                }
+                        .btn{
+                            @extend %btn, %btn--primary;
+                            padding: 2.05rem 7.8rem;
+                            font-family: rubik;
+                            border:none;
+                            cursor: pointer;
+                            text-transform: uppercase;
+
+                            :focus{
+                                outline: none;
+                            }
+                        }
+                        span{
+                            display:block;
+                            margin: 3rem 0 5.3rem;
+                            font-size: 1.8rem;
+                            line-height: 4rem;
+                            font-family: font-family(secondary);
+                            font-weight: normal;
+                            
+                            a{
+                                text-decoration: none;
+                                color: color(red);
+                                font-weight: 500;
+                                cursor: pointer;
+                            }
+                        }
+            }
+        }
+    }
+}

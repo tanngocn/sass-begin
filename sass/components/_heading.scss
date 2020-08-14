@@ -1,0 +1,13 @@
+%h2{
+    color: color(black-secondary);
+            font-family: pt;
+            font-size: 4.8rem;
+            line-height: 140%;
+            font-weight: normal;
+
+            @include response(md){
+               font-size: 3rem;
+               line-height: 100%;
+               padding: 3rem .5rem;
+             }
+}

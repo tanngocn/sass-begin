@@ -1,0 +1,62 @@
+section.support-block{
+    padding: 11.2rem 0 5.9rem;
+    
+    @include response(md) {
+        padding: 3.51rem 0 2.45rem;
+    }
+
+    & .content{
+        @include flexPosition(space-between);
+
+        @include response(md){
+            @include flexPosition(center, center, column);
+            max-width: 100%;
+        }
+
+        &__left{
+            font-family: font-family(secondary);
+            color: color(primary);
+            max-width: 100%;
+
+            @include response(md){
+               max-width: 100%;
+               text-align: center;
+               margin:0 auto;
+                
+            }
+
+            h3{
+                font-size:  2.6rem;
+                font-weight: 500;
+                line-height: 3.9rem;
+                @include response(md){
+                    font-size: 1.8rem;     
+                 }
+            }
+            p{
+                font-size: 1.8rem;
+                line-height: 3rem;
+                margin-top: 1.6rem;
+
+                @include response(md){
+                    font-size: 1.5rem; 
+                    line-height:2rem;    
+                 }
+            }
+        }
+        &__right{
+            box-sizing: border-box;
+            @include response(md){
+              margin-top: 2rem;
+             }
+            img{
+                max-width: 100%;
+            }
+            @include response(md){
+                padding: 2rem;
+                max-width: 100%;
+                box-shadow: color(shadow--1);
+             }
+        }
+    }
+}

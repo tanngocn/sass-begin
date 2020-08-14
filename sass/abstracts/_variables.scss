@@ -1,14 +1,29 @@
 $colors:(
+  primary: #626780,
+  secondary: #717784,
+  black: #505050,
+  black-secondary: #402B2B,
+  white: #ffffff,
+  gray-bg: #c5c5c5,
+  gray: #c8c8c8,
+  gray-bold:#c4c4c4,
+  red:#F01F35,
+
+  button-primary: #9B9BCA,
+  eclip--1: rgba(245, 245, 255, 0.8),
+  eclip--2:#FFEDEF,
+  shadow--1:  0px 2.5rem 5.9rem rgba(191, 191, 236, 0.72),
 
 );
-
-$font-sizes:(
-
+$font-family:(
+    primary: robo_r,
+    secondary: poppi_r,
 );
+
 @function color($color-name){
-    @return map.get($colors, $color-name);
+    @return map-get($colors, $color-name);
 };
 
-@function size($size){
-    @return map.get($font-sizes, $size);
+@function font-family($font){
+    @return map-get($font-family, $font);
 }

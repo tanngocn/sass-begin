@@ -4,15 +4,43 @@
 }
 
 @font-face{
-    font-family: lato_r;
-    src: url(../../fonts/Lato-Regular.ttf);
+    font-family: robo_r;
+    src: url(../../fonts/Roboto-Regular.ttf);
 }
+
 @font-face{
-    font-family: lato_b;
-    src: url(../../fonts/Lato-Bold.ttf);
+    font-family: poppi_r;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: rammet;
+    src: url(../../fonts/RammettoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: dmserif;
+    src: url(../../fonts/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: pt;
+    src: url(../../fonts/PTSerif-Regular.ttf)
+}
+
+@font-face {
+    font-family: rubik;
+    src : url(../../fonts/Rubik-Regular.ttf)
 }
 
 html, body{
     font-size: 62.5%;
-    font-family: lato_r;
+    max-width: 100%;
+    margin:0 auto;
+    font-family: font-family(primary);
+    overflow-x: hidden;
+}
+.container{
+    width: 120rem;
+    margin:0 auto;
 }
