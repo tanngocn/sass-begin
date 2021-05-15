@@ -1,0 +1,49 @@
+section.register-block{
+    width: 90rem;
+    height: 80rem;
+    position: relative;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: color(white);
+    box-sizing: border-box;
+    z-index: -1;
+    border: 0.1rem solid color(primary);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-image: url(../../images/header_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35rem;
+        width: 100%;
+        z-index: 1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: -5rem;
+        right: 0rem;
+        background-image: url(../../images/vector.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 32rem;
+        z-index: 1;
+        width: 100%;
+    }
+    .logo {
+        width: 14rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 2;
+        padding: 4rem 7.2rem;
+
+        & >image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

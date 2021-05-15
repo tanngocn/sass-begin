@@ -4,34 +4,19 @@
 }
 
 @font-face{
-    font-family: robo_r;
-    src: url(../../fonts/Roboto-Regular.ttf);
+    font-family: myriad_regular;
+    src: url(../../fonts/MYRIADPRO-REGULAR.OTF);
 }
 
 @font-face{
-    font-family: poppi_r;
-    src: url(../../fonts/Poppins-Regular.ttf);
+    font-family: myriad_light;
+    src: url(../../fonts/MYRIADPRO-LIGHT_0.OTF);
+}
+@font-face{
+    font-family: myriad_black;
+    src: url(../../fonts/MYRIADPRO-BLACK_0.OTF);
 }
 
-@font-face {
-    font-family: rammet;
-    src: url(../../fonts/RammettoOne-Regular.ttf);
-}
-
-@font-face {
-    font-family: dmserif;
-    src: url(../../fonts/DMSerifDisplay-Regular.ttf);
-}
-
-@font-face {
-    font-family: pt;
-    src: url(../../fonts/PTSerif-Regular.ttf)
-}
-
-@font-face {
-    font-family: rubik;
-    src : url(../../fonts/Rubik-Regular.ttf)
-}
 
 html, body{
     font-size: 62.5%;
