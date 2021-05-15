@@ -16,8 +16,9 @@ $colors:(
 
 );
 $font-family:(
-    primary: robo_r,
-    secondary: poppi_r,
+    primary: myriad_regular,
+    primary--bold: myriad-black,
+    secondary: myriad_light,
 );
 
 @function color($color-name){

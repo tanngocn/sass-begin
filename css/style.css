@@ -18,7 +18,7 @@ html, body {
   font-size: 62.5%;
   max-width: 100%;
   margin: 0 auto;
-  font-family: robo_r;
+  font-family: myriad_regular;
   overflow-x: hidden; }
 
 .container {
@@ -69,7 +69,7 @@ header.header {
     header.header .block-heading__description {
       font-size: 1.8rem;
       list-style: 2.7rem;
-      font-family: poppi_r;
+      font-family: myriad_light;
       margin-top: 3rem;
       text-align: justify; }
       @media (max-width: 800px) {
@@ -104,7 +104,7 @@ header.header {
   .nav__logo {
     text-decoration: none;
     font-size: 2.2rem;
-    font-family: robo_r;
+    font-family: myriad_regular;
     color: #2c3e50; }
     @media (max-width: 800px) {
       .nav__logo {
@@ -156,13 +156,13 @@ header.header {
       .nav .list-nav__item a {
         text-decoration: none;
         font-size: 1.8rem;
-        font-family: poppi_r; }
+        font-family: myriad_light; }
     .nav .list-nav__btn {
       margin-right: 0;
       padding: 1rem 2rem; }
 
 section.about-block, section.feature-block, section.card-block .review-block__right {
-  font-family: poppi_r;
+  font-family: myriad_light;
   text-align: center;
   width: 100%;
   padding: 9.5rem 0 8.2rem 0;
@@ -208,7 +208,7 @@ section.category-block {
     section.category-block .content__item {
       text-align: center;
       color: #2e952e;
-      font-family: poppi_r;
+      font-family: myriad_light;
       border-bottom: 0.7rem solid #ffffff;
       transition: border-bottom .4s;
       width: 21.75%;
@@ -251,7 +251,7 @@ section.support-block {
         flex-direction: column;
         max-width: 100%; } }
     section.support-block .content__left {
-      font-family: poppi_r;
+      font-family: myriad_light;
       color: #2e952e;
       max-width: 100%; }
       @media (max-width: 800px) {
@@ -393,7 +393,7 @@ section.question-block {
       font-size: 1.8rem;
       line-height: 3rem;
       font-weight: 300;
-      font-family: poppi_r;
+      font-family: myriad_light;
       max-width: 100%;
       position: relative;
       transition: .5s;
@@ -506,7 +506,7 @@ section.card-block {
       section.card-block .content .card-item__body {
         text-align: center;
         margin-top: 5.3rem;
-        font-family: poppi_r; }
+        font-family: myriad_light; }
         section.card-block .content .card-item__body h3 {
           font-size: 2.6rem;
           font-weight: 500;
@@ -601,24 +601,24 @@ section.card-block {
           border-radius: 50%;
           background-color: #ffffff;
           margin-right: 2.8rem; }
-        section.card-block .raiting-block__left .writen .description {
-          font-family: poppi_r; }
-          section.card-block .raiting-block__left .writen .description h4 {
+        section.card-block .raiting-block__left .writen .description, section.card-block .raiting-block__left .writen section.register-block .email, section.register-block section.card-block .raiting-block__left .writen .email {
+          font-family: myriad_light; }
+          section.card-block .raiting-block__left .writen .description h4, section.card-block .raiting-block__left .writen section.register-block .email h4, section.register-block section.card-block .raiting-block__left .writen .email h4 {
             color: #2e952e;
             font-size: 1.8rem; }
-          section.card-block .raiting-block__left .writen .description p {
+          section.card-block .raiting-block__left .writen .description p, section.card-block .raiting-block__left .writen section.register-block .email p, section.register-block section.card-block .raiting-block__left .writen .email p {
             font-size: 1.6rem; }
-          section.card-block .raiting-block__left .writen .description .raiting {
+          section.card-block .raiting-block__left .writen .description .raiting, section.card-block .raiting-block__left .writen section.register-block .email .raiting, section.register-block section.card-block .raiting-block__left .writen .email .raiting {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: row;
             font-size: 1.2rem; }
-            section.card-block .raiting-block__left .writen .description .raiting span {
+            section.card-block .raiting-block__left .writen .description .raiting span, section.card-block .raiting-block__left .writen section.register-block .email .raiting span, section.register-block section.card-block .raiting-block__left .writen .email .raiting span {
               max-width: 1.5rem;
               flex-wrap: nowrap;
               height: 1.5rem; }
-              section.card-block .raiting-block__left .writen .description .raiting span img {
+              section.card-block .raiting-block__left .writen .description .raiting span img, section.card-block .raiting-block__left .writen section.register-block .email .raiting span img, section.register-block section.card-block .raiting-block__left .writen .email .raiting span img {
                 display: inline-block;
                 max-width: 100%;
                 max-height: 100%; }
@@ -721,7 +721,7 @@ section.login-block {
         margin: 3rem 0 5.3rem;
         font-size: 1.8rem;
         line-height: 4rem;
-        font-family: poppi_r;
+        font-family: myriad_light;
         font-weight: normal; }
         section.login-block .content .block .form span a {
           text-decoration: none;
@@ -730,14 +730,14 @@ section.login-block {
           cursor: pointer; }
 
 section.register-block {
-  width: 90rem;
-  height: 80rem;
+  width: 114rem;
+  height: 110rem;
   position: relative;
   font-size: 1.4rem;
   margin: 0 auto;
-  padding: 1rem;
   background-color: #ffffff;
   box-sizing: border-box;
+  font-family: myriad_regular;
   z-index: -1;
   border: 0.1rem solid #2e952e; }
   section.register-block::before {
@@ -748,29 +748,68 @@ section.register-block {
     background-image: url(../../images/header_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35rem;
+    height: 42.8rem;
     width: 100%;
     z-index: 1; }
   section.register-block::after {
     content: '';
     position: absolute;
-    top: -5rem;
+    top: 0rem;
     right: 0rem;
     background-image: url(../../images/vector.png);
+    background-color: #2e952e;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 32rem;
+    background-blend-mode: color-dodge;
+    height: 20.5rem;
     z-index: 1;
-    width: 100%; }
+    width: 65%; }
   section.register-block .logo {
     width: 14rem;
     height: 4.8rem;
     position: relative;
     z-index: 2;
-    padding: 4rem 7.2rem; }
+    padding: 4rem 7.2rem;
+    margin-bottom: 4rem; }
     section.register-block .logo > image {
       max-width: 100%;
       max-height: 100%; }
+  section.register-block .title {
+    margin-top: 4rem;
+    font-size: 5.6rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 40rem; }
+  section.register-block .description, section.register-block .email {
+    font-size: 2.2rem;
+    width: 30rem;
+    text-align: justify;
+    color: white; }
+  section.register-block .email {
+    font-weight: 700;
+    margin: 1.5rem 0; }
+  section.register-block .listBtn {
+    width: 23rem;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    top: 7rem;
+    color: #ffffff;
+    font-size: 2.4rem;
+    right: 5rem; }
+    section.register-block .listBtn .btn {
+      display: flex;
+      justify-content: space-around;
+      padding: 1.8rem 2.5rem;
+      height: 2.2rem;
+      align-items: center;
+      border-radius: 20rem;
+      margin: .7rem 0; }
+      section.register-block .listBtn .btn--mail {
+        background-color: #67b63c;
+        border: 0.1rem solid #326f50; }
+      section.register-block .listBtn .btn--phone {
+        background-color: #326f50;
+        border: 0.1rem solid #67b63c; }
 
 footer.footer {
   margin-top: 5.7rem;
@@ -796,7 +835,7 @@ footer.footer {
     flex-direction: row;
     flex-wrap: wrap; }
     footer.footer .content__item {
-      font-family: poppi_r;
+      font-family: myriad_light;
       margin: 0 5.4rem; }
       footer.footer .content__item h3 {
         font-size: 2rem;
@@ -852,7 +891,7 @@ header.header .block-heading a, .nav .list-nav__btn, section.question-block .con
   display: inline-block;
   text-decoration: none;
   color: #ffffff;
-  font-family: poppi_r;
+  font-family: myriad_light;
   border-radius: 1rem;
   cursor: pointer;
   font-weight: 600; }
