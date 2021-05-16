@@ -46,6 +46,12 @@
     z-index: $zIndex;
 }
 
+@mixin formStyle($pt: 0rem, $pr: 0rem, $pb: 0rem,  $pl: 0rem){
+    padding: $pt+ rem + " " + $pr + rem + " " + $pb + rem + " " +  $pl +rem ;
+    box-sizing: border-box;
+    @include flexPosition(center, center , column);
+}
+
 @mixin block() {
     background: #FFFFFF;
     box-shadow: 0px 2rem 4rem rgba(238, 77, 71, 0.1);

@@ -1,0 +1,38 @@
+.form{
+    @include formStyle(26, 2 , 10, 2);
+    width: 100%;
+    height: auto;  
+    font-size: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &__group{ 
+        margin-bottom: 2rem;
+     
+        & > label{
+            display: block;
+        }
+        & > input {
+            width: 100%;
+            height: 4.2rem;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            border: .1rem solid color(primary);
+        }
+        & > select {
+            width: 100%;
+            height: 4.456rem;
+            border: .1rem solid color(primary);
+        }
+    }
+    .btn{
+        @extend %btn;
+        &--primary {
+            @extend %btn--primary;
+        }
+        &--reset {
+            @extend %btn--reset;
+        }
+    }
+    
+}

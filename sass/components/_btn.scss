@@ -1,7 +1,10 @@
 %btn {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
+    border: none;
     display: inline-block;
-
+    width: 100%;
+    margin: .5rem 0;
     @include response(md) {
         font-size: 1.4rem;
         display: block;
@@ -11,16 +14,19 @@
     text-decoration: none;
     color: color(white);
     font-family: font-family(secondary);
-    border-radius: 1rem;
     cursor: pointer;
     font-weight: 600;
 
     &--red {
         background-color: color(red);
     }
-
+    &--reset{
+        background-color: transparent;
+        text-decoration: underline;
+        color: color(black)
+    }
     &--primary {
-        background-color: color(button-primary);
+        background-color: color(primary);
     }
 }
 

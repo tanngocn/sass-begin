@@ -17,6 +17,7 @@
     src: url(../../fonts/MYRIADPRO-BLACK_0.OTF);
 }
 
+$gap: 1rem;
 
 html, body{
     font-size: 62.5%;
@@ -26,6 +27,28 @@ html, body{
     overflow-x: hidden;
 }
 .container{
-    width: 120rem;
+    width: calc(100% - 10rem);
+    max-width: 80rem;
     margin:0 auto;
+}
+.row{
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: $gap;
+    &--between{
+        justify-content: space-between;
+    }
+    &--center{
+        justify-content: center;
+    }
+}
+
+$columns: 12;
+@for $i from 1 through $columns {
+    .col-#{$i}{
+        flex: 0 0 calc((100% / #{$columns} * #{$i}) - #{$gap});   
+    }
+    .col-offset-#{$i}{
+        margin-left: 100% / $columns * $i ;
+    }
 }

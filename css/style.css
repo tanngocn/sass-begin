@@ -22,8 +22,90 @@ html, body {
   overflow-x: hidden; }
 
 .container {
-  width: 120rem;
+  width: calc(100% - 10rem);
+  max-width: 80rem;
   margin: 0 auto; }
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  column-gap: 1rem; }
+  .row--between {
+    justify-content: space-between; }
+  .row--center {
+    justify-content: center; }
+
+.col-1 {
+  flex: 0 0 calc((100% / 12 * 1) - 1rem); }
+
+.col-offset-1 {
+  margin-left: 8.33333%; }
+
+.col-2 {
+  flex: 0 0 calc((100% / 12 * 2) - 1rem); }
+
+.col-offset-2 {
+  margin-left: 16.66667%; }
+
+.col-3 {
+  flex: 0 0 calc((100% / 12 * 3) - 1rem); }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-4 {
+  flex: 0 0 calc((100% / 12 * 4) - 1rem); }
+
+.col-offset-4 {
+  margin-left: 33.33333%; }
+
+.col-5 {
+  flex: 0 0 calc((100% / 12 * 5) - 1rem); }
+
+.col-offset-5 {
+  margin-left: 41.66667%; }
+
+.col-6 {
+  flex: 0 0 calc((100% / 12 * 6) - 1rem); }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-7 {
+  flex: 0 0 calc((100% / 12 * 7) - 1rem); }
+
+.col-offset-7 {
+  margin-left: 58.33333%; }
+
+.col-8 {
+  flex: 0 0 calc((100% / 12 * 8) - 1rem); }
+
+.col-offset-8 {
+  margin-left: 66.66667%; }
+
+.col-9 {
+  flex: 0 0 calc((100% / 12 * 9) - 1rem); }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-10 {
+  flex: 0 0 calc((100% / 12 * 10) - 1rem); }
+
+.col-offset-10 {
+  margin-left: 83.33333%; }
+
+.col-11 {
+  flex: 0 0 calc((100% / 12 * 11) - 1rem); }
+
+.col-offset-11 {
+  margin-left: 91.66667%; }
+
+.col-12 {
+  flex: 0 0 calc((100% / 12 * 12) - 1rem); }
+
+.col-offset-12 {
+  margin-left: 100%; }
 
 header.header {
   max-width: 100%;
@@ -601,24 +683,24 @@ section.card-block {
           border-radius: 50%;
           background-color: #ffffff;
           margin-right: 2.8rem; }
-        section.card-block .raiting-block__left .writen .description, section.card-block .raiting-block__left .writen section.register-block .email, section.register-block section.card-block .raiting-block__left .writen .email {
+        section.card-block .raiting-block__left .writen .description, section.card-block .raiting-block__left .writen section.register-block .wrapper .email, section.register-block .wrapper section.card-block .raiting-block__left .writen .email {
           font-family: myriad_light; }
-          section.card-block .raiting-block__left .writen .description h4, section.card-block .raiting-block__left .writen section.register-block .email h4, section.register-block section.card-block .raiting-block__left .writen .email h4 {
+          section.card-block .raiting-block__left .writen .description h4, section.card-block .raiting-block__left .writen section.register-block .wrapper .email h4, section.register-block .wrapper section.card-block .raiting-block__left .writen .email h4 {
             color: #2e952e;
             font-size: 1.8rem; }
-          section.card-block .raiting-block__left .writen .description p, section.card-block .raiting-block__left .writen section.register-block .email p, section.register-block section.card-block .raiting-block__left .writen .email p {
+          section.card-block .raiting-block__left .writen .description p, section.card-block .raiting-block__left .writen section.register-block .wrapper .email p, section.register-block .wrapper section.card-block .raiting-block__left .writen .email p {
             font-size: 1.6rem; }
-          section.card-block .raiting-block__left .writen .description .raiting, section.card-block .raiting-block__left .writen section.register-block .email .raiting, section.register-block section.card-block .raiting-block__left .writen .email .raiting {
+          section.card-block .raiting-block__left .writen .description .raiting, section.card-block .raiting-block__left .writen section.register-block .wrapper .email .raiting, section.register-block .wrapper section.card-block .raiting-block__left .writen .email .raiting {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: row;
             font-size: 1.2rem; }
-            section.card-block .raiting-block__left .writen .description .raiting span, section.card-block .raiting-block__left .writen section.register-block .email .raiting span, section.register-block section.card-block .raiting-block__left .writen .email .raiting span {
+            section.card-block .raiting-block__left .writen .description .raiting span, section.card-block .raiting-block__left .writen section.register-block .wrapper .email .raiting span, section.register-block .wrapper section.card-block .raiting-block__left .writen .email .raiting span {
               max-width: 1.5rem;
               flex-wrap: nowrap;
               height: 1.5rem; }
-              section.card-block .raiting-block__left .writen .description .raiting span img, section.card-block .raiting-block__left .writen section.register-block .email .raiting span img, section.register-block section.card-block .raiting-block__left .writen .email .raiting span img {
+              section.card-block .raiting-block__left .writen .description .raiting span img, section.card-block .raiting-block__left .writen section.register-block .wrapper .email .raiting span img, section.register-block .wrapper section.card-block .raiting-block__left .writen .email .raiting span img {
                 display: inline-block;
                 max-width: 100%;
                 max-height: 100%; }
@@ -730,86 +812,93 @@ section.login-block {
           cursor: pointer; }
 
 section.register-block {
-  width: 114rem;
-  height: 110rem;
-  position: relative;
-  font-size: 1.4rem;
-  margin: 0 auto;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  font-family: myriad_regular;
-  z-index: -1;
-  border: 0.1rem solid #2e952e; }
-  section.register-block::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-image: url(../../images/header_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 42.8rem;
-    width: 100%;
-    z-index: 1; }
-  section.register-block::after {
-    content: '';
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
-    background-image: url(../../images/vector.png);
-    background-color: #2e952e;
-    background-size: cover;
-    background-blend-mode: color-dodge;
-    height: 20.5rem;
-    z-index: 1;
-    width: 65%; }
-  section.register-block .logo {
-    width: 14rem;
-    height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: calc(100vh - 10rem); }
+  section.register-block .wrapper {
+    width: 80rem;
+    height: 100%;
+    max-height: 92rem;
     position: relative;
-    z-index: 2;
-    padding: 4rem 7.2rem;
-    margin-bottom: 4rem; }
-    section.register-block .logo > image {
-      max-width: 100%;
-      max-height: 100%; }
-  section.register-block .title {
-    margin-top: 4rem;
-    font-size: 5.6rem;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 40rem; }
-  section.register-block .description, section.register-block .email {
-    font-size: 2.2rem;
-    width: 30rem;
-    text-align: justify;
-    color: white; }
-  section.register-block .email {
-    font-weight: 700;
-    margin: 1.5rem 0; }
-  section.register-block .listBtn {
-    width: 23rem;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    top: 7rem;
-    color: #ffffff;
-    font-size: 2.4rem;
-    right: 5rem; }
-    section.register-block .listBtn .btn {
-      display: flex;
-      justify-content: space-around;
-      padding: 1.8rem 2.5rem;
-      height: 2.2rem;
-      align-items: center;
-      border-radius: 20rem;
-      margin: .7rem 0; }
-      section.register-block .listBtn .btn--mail {
-        background-color: #67b63c;
-        border: 0.1rem solid #326f50; }
-      section.register-block .listBtn .btn--phone {
-        background-color: #326f50;
-        border: 0.1rem solid #67b63c; }
+    font-size: 1.4rem;
+    margin: auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: myriad_regular;
+    z-index: 1;
+    border: 0.1rem solid #2e952e; }
+    section.register-block .wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background-image: url(../../images/header_bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 37.8rem;
+      width: 100%;
+      z-index: 1; }
+    section.register-block .wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0rem;
+      right: 0rem;
+      background-image: url(../../images/vector.png);
+      background-color: #2e952e;
+      background-size: cover;
+      background-blend-mode: color-dodge;
+      height: 10.5rem;
+      z-index: 1;
+      width: 65%; }
+    section.register-block .wrapper .logo {
+      width: 14rem;
+      height: 4.8rem;
+      position: relative;
+      z-index: 2;
+      padding: 4rem 7.2rem;
+      margin-bottom: 4rem; }
+      section.register-block .wrapper .logo > image {
+        max-width: 100%;
+        max-height: 100%; }
+    section.register-block .wrapper .title {
+      margin-top: 4rem;
+      font-size: 5.6rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 40rem; }
+    section.register-block .wrapper .description, section.register-block .wrapper .email {
+      font-size: 2.2rem;
+      width: 30rem;
+      text-align: justify;
+      color: white; }
+    section.register-block .wrapper .email {
+      font-weight: 700;
+      margin: 1.5rem 0; }
+    section.register-block .wrapper .listBtn {
+      width: 23rem;
+      height: auto;
+      position: absolute;
+      z-index: 2;
+      top: 7rem;
+      color: #ffffff;
+      font-size: 2.4rem;
+      right: 5rem; }
+      section.register-block .wrapper .listBtn .btn {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.8rem 2.5rem;
+        height: 2.2rem;
+        align-items: center;
+        border-radius: 20rem;
+        margin: .7rem 0; }
+        section.register-block .wrapper .listBtn .btn--mail {
+          background-color: #67b63c;
+          border: 0.1rem solid #326f50; }
+        section.register-block .wrapper .listBtn .btn--phone {
+          background-color: #326f50;
+          border: 0.1rem solid #67b63c; }
 
 footer.footer {
   margin-top: 5.7rem;
@@ -886,24 +975,31 @@ footer.footer {
             font-family: rammet;
             text-transform: uppercase; }
 
-header.header .block-heading a, .nav .list-nav__btn, section.question-block .content .btn-middle a, section.card-block .content .card-item a.primary, section.card-block .content .card-item a.red, section.login-block .content .block .form .btn {
-  font-size: 1.8rem;
+header.header .block-heading a, .nav .list-nav__btn, section.question-block .content .btn-middle a, section.card-block .content .card-item a.primary, section.card-block .content .card-item a.red, section.login-block .content .block .form .btn, .form .btn {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+  border: none;
   display: inline-block;
+  width: 100%;
+  margin: .5rem 0;
   text-decoration: none;
   color: #ffffff;
   font-family: myriad_light;
-  border-radius: 1rem;
   cursor: pointer;
   font-weight: 600; }
   @media (max-width: 800px) {
-    header.header .block-heading a, .nav .list-nav__btn, section.question-block .content .btn-middle a, section.card-block .content .card-item a.primary, section.card-block .content .card-item a.red, section.login-block .content .block .form .btn {
+    header.header .block-heading a, .nav .list-nav__btn, section.question-block .content .btn-middle a, section.card-block .content .card-item a.primary, section.card-block .content .card-item a.red, section.login-block .content .block .form .btn, .form .btn {
       font-size: 1.4rem;
       display: block;
       padding: 1rem 2.4rem; } }
   section.card-block .content .card-item a.red {
     background-color: #F01F35; }
-  header.header .block-heading a, .nav .list-nav__btn, section.question-block .content .btn-middle a, section.card-block .content .card-item a.primary, section.login-block .content .block .form .btn {
-    background-color: #9B9BCA; }
+  .form .btn--reset {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #2c3e50; }
+  header.header .block-heading a, .nav .list-nav__btn, section.question-block .content .btn-middle a, section.card-block .content .card-item a.primary, section.login-block .content .block .form .btn, .form .btn--primary {
+    background-color: #2e952e; }
 
 .demo-block .content h2, section.question-block .content h2, section.login-block .content h2 {
   font-family: pt;
@@ -915,3 +1011,30 @@ header.header .block-heading a, .nav .list-nav__btn, section.question-block .con
       font-size: 3rem;
       line-height: 100%;
       padding: 3rem .5rem; } }
+
+.form {
+  padding: 26rem 2rem 10rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  font-size: 2.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .form__group {
+    margin-bottom: 2rem; }
+    .form__group > label {
+      display: block; }
+    .form__group > input {
+      width: 100%;
+      height: 4.2rem;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      border: 0.1rem solid #2e952e; }
+    .form__group > select {
+      width: 100%;
+      height: 4.456rem;
+      border: 0.1rem solid #2e952e; }

@@ -1,97 +1,103 @@
 section.register-block{
-    width: 114rem;
-    height: 110rem;
-    position: relative;
-    font-size: 1.4rem;
-    margin: 0 auto;
-    background-color: color(white);
-    box-sizing: border-box;
-    font-family: font-family(primary);
-    z-index: -1;
-    border: 0.1rem solid color(primary);
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        background-image: url(../../images/header_bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 42.8rem;
-        width: 100%;
-        z-index: 1;
-    }
-    &::after{
-        content: '';
-        position: absolute;
-        top: 0rem;
-        right: 0rem;
-        background-image: url(../../images/vector.png);
-        background-color: #2e952e;
-        background-size: cover;
-        background-blend-mode: color-dodge;
-        height: 20.5rem;
-        z-index: 1;
-        width: 65%;
-    }
-    .logo {
-        width: 14rem;
-        height: 4.8rem;
+    @include flexPosition();
+    height: calc(100vh - 10rem);
+    .wrapper{
+        width: 80rem;
+        height: 100%;
+        max-height: 92rem;
         position: relative;
-        z-index: 2;
-        padding: 4rem 7.2rem;
-        margin-bottom: 4rem;
-
-        & >image {
-            max-width: 100%;
-            max-height: 100%;
+        font-size: 1.4rem;
+        margin: auto;
+        background-color: color(white);
+        box-sizing: border-box;
+        font-family: font-family(primary);
+        z-index: 1;
+        border: 0.1rem solid color(primary);
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background-image: url(../../images/header_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 37.8rem;
+            width: 100%;
+            z-index: 1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0rem;
+            right: 0rem;
+            background-image: url(../../images/vector.png);
+            background-color: #2e952e;
+            background-size: cover;
+            background-blend-mode: color-dodge;
+            height: 10.5rem;
+            z-index: 1;
+            width: 65%;
+        }
+        .logo {
+            width: 14rem;
+            height: 4.8rem;
+            position: relative;
+            z-index: 2;
+            padding: 4rem 7.2rem;
+            margin-bottom: 4rem;
+    
+            & >image {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .title{
+            margin-top: 4rem;
+            font-size: 5.6rem;
+            text-transform: uppercase;
+            color: color(white);
+            width: 40rem;
+        }
+        .description{
+            font-size: 2.2rem;
+            width: 30rem;
+            text-align: justify;
+            color: white;
+        }
+        .email{
+            @extend .description ;
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+        .listBtn{
+            width: 23rem;
+            height: auto;
+            position: absolute;
+            z-index: 2;
+            top: 7rem;
+            color: color(white);
+            font-size: 2.4rem;
+            right: 5rem;
+                .btn {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 1.8rem 2.5rem;
+                    height: 2.2rem;
+                    align-items: center;
+                    border-radius: 20rem;
+                    margin: .7rem 0;
+    
+                    &--mail{
+                        background-color: color(primary-light);
+                        border: .1rem solid color(primary-bold);
+                    }
+                    &--phone{
+                        background-color: color(primary-bold);
+                        border: .1rem solid color(primary-light);
+                    }
+                }
         }
     }
-    .title{
-        margin-top: 4rem;
-        font-size: 5.6rem;
-        text-transform: uppercase;
-        color: color(white);
-        width: 40rem;
-    }
-    .description{
-        font-size: 2.2rem;
-        width: 30rem;
-        text-align: justify;
-        color: white;
-    }
-    .email{
-        @extend .description ;
-        font-weight: 700;
-        margin: 1.5rem 0;
-    }
-    .listBtn{
-        width: 23rem;
-        height: auto;
-        position: absolute;
-        z-index: 2;
-        top: 7rem;
-        color: color(white);
-        font-size: 2.4rem;
-        right: 5rem;
-            .btn {
-                display: flex;
-                justify-content: space-around;
-                padding: 1.8rem 2.5rem;
-                height: 2.2rem;
-                align-items: center;
-                border-radius: 20rem;
-                margin: .7rem 0;
-
-                &--mail{
-                    background-color: color(primary-light);
-                    border: .1rem solid color(primary-bold);
-                }
-                &--phone{
-                    background-color: color(primary-bold);
-                    border: .1rem solid color(primary-light);
-                }
-            }
-    }
+  
 }

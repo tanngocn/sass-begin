@@ -11,37 +11,88 @@
 
 <body>
     <section class="register-block">
-        <div class="logo">
-            <img src="../../images/logo.png" alt="logo">
-            <h2 class="title">
-                đăng ký
-            </h2>
-            <p class="email">https://lifetek.com.vn</p>
-            <p class="description">Vui lòng điền đầy đủ các thông tin dưới đây.
-                Chúng tôi sẽ liên lạc lại trong 24h làm
-                việc</p>
-        </div>
-        <div class="listBtn">
-            <div class="btn btn--mail">
-                <div class="icon">
-                    <img src="../images/icon_mail.png" alt="mail">
+        <div class="wrapper">
+
+            <div class="logo">
+                <img src="../../images/logo.png" alt="logo">
+                <h2 class="title">
+                    đăng ký
+                </h2>
+                <p class="email">https://lifetek.com.vn</p>
+                <p class="description">Vui lòng điền đầy đủ các thông tin dưới đây.
+                    Chúng tôi sẽ liên lạc lại trong 24h làm
+                    việc</p>
+            </div>
+            <div class="listBtn">
+                <div class="btn btn--mail">
+                    <div class="icon">
+                        <img src="../images/icon_mail.png" alt="mail">
+                    </div>
+                    <div class="content">
+                        info@lifetek.vn
+                    </div>
                 </div>
-                <div class="content">
-                    info@lifetek.vn
+                <div class="btn btn--phone">
+                    <div class="icon">
+                        <img src="../images/icon_phone.png" alt="mail">
+                    </div>
+                    <div class="content">
+                        090.414.3388
+                    </div>
                 </div>
             </div>
-            <div class="btn btn--phone">
-                <div class="icon">
-                    <img src="../images/icon_phone.png" alt="mail">
+            <form action="" class="form">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="form__group col-12">
+                            <label for="name">Họ và tên bạn* </label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="form__group  col-12">
+                            <label for="product">Sản phẩm bạn quan tâm </label>
+                            <select name="product" id="product">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-7">
+                            <label for="email">Email của bạn* </label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="form__group col-5">
+                            <label for="phoneNumber">Số điện thoại* </label>
+                            <input type="text" name="phoneNumber" id="phoneNumber">
+                        </div>
+                        <div class="form__group col-7">
+                            <label for="province">Tỉnh thành phố*</label>
+                            <select name="province" id="province">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-5">
+                            <label for="employee">Quy mô nhân sự*</label>
+                            <select name="employee" id="employee">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-12">
+                            <button class="btn btn--primary">Đăng ký</button>
+                            <button class="btn btn--reset">Nhập lại</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="content">
-                    090.414.3388
-                </div>
-            </div>
+            </form>
         </div>
-        <form action="">
-            hello
-        </form>
     </section>
 </body>
 
